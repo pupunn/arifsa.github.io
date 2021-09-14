@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="image/youtube.svg" />
+    
+    <title>Youtube</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <style>
+        .search-box {
+            position: relative;
+            max-width: 500px;
+            width: 50%;
+            margin-left: auto;
+        }
+
+        .navbarr {
+            margin-left: auto;
+            align-items: center;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 90px;
+            width: 250px;
+            max-height: calc(100vh - 15px);
+            overflow: scroll;
+        }
+
+        .list-group-item {
+            border: none;
+        }
+
+        .divider {
+            border-bottom: 1px solid #000;
+        }
+
+        .space {
+            margin-top: 90px;
+        }
+
+        .button {
+            border-radius: 16px;
+        }
+
+        .thumbnail {
+            position: relative;
+        }
+
+        .time {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="image/youtube.png" alt="" width="100" height="54">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="search-box d-flex">
+                    <input class="form-control" type="search" placeholder="Telusuri" aria-label="Search" />
+                    <button class="btn btn-outline-primary me-2" type="submit"><i class="fas fa-search"></i></button>
+                    <button class="btn btn-outline-dark" disabled><i class="fas fa-microphone"></i></button>
+                </div>
+                <form class="navbarr d-flex">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-video fa-lg"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-th fa-lg"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-bell fa-lg"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="image/A.png" alt="" width="32" height="32">
+                            </a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+
+    <div class="row">
+        <div class="col-lg-2 pr-0">
+            <!-- Sidebar -->
+            <div class="list-group list-group-flush sidebar">
+                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    <i class="fas fa-home fa-fw"></i> Beranda
+                </a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-compass fa-fw"></i> Eksplorasi</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fab fa-youtube fa-fw"></i> Subscribtion</a>
+                <hr class="divider">
+                <a href="#" class="list-group-item list-group-item-action"><i class="fab fa-youtube fa-fw"></i> Koleksi</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-history fa-fw"></i> Histori</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fab fa-youtube fa-fw"></i> Video Anda</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="far fa-clock fa-fw"></i> Tonton Nanti</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="far fa-thumbs-up fa-fw"></i> Video yang disukai</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-chevron-down fa-fw"></i> Lebih banyak</a>
+                <hr class="divider">
+                <b class="list-group-item"> SUBSCRIBTION </b>
+                <a href="#" class="list-group-item list-group-item-action"> 
+                   <img class="rounded-circle" src="image/channel1.jpg" alt="" width="24" height="24">
+                   <span>Mobile Legends: B...</span> 
+                </a>
+                <a href="#" class="list-group-item list-group-item-action"> 
+                   <img class="rounded-circle" src="image/channel2.jpg" alt="" width="24" height="24">
+                   <span>The Jooomers</span> 
+                </a>
+                <a href="#" class="list-group-item list-group-item-action"> 
+                   <img class="rounded-circle" src="image/channel3.jpg" alt="" width="24" height="24">
+                   <span>Tretan Universe</span> 
+                </a>
+                <a href="#" class="list-group-item list-group-item-action"> 
+                   <img class="rounded-circle" src="image/channel4.jpg" alt="" width="24" height="24">
+                   <span>Genshin Impact</span> 
+                </a>
+                <a href="#" class="list-group-item list-group-item-action"> 
+                   <img class="rounded-circle" src="image/channel5.jpg" alt="" width="24" height="24">
+                   <span>DK ID</span> 
+                </a>
+                <a href="#" class="list-group-item list-group-item-action"> 
+                   <img class="rounded-circle" src="image/channel6.jpg" alt="" width="24" height="24">
+                   <span>Deddy Corbuzier</span> 
+                </a>
+                <a href="#" class="list-group-item list-group-item-action"> 
+                   <img class="rounded-circle" src="image/channel7.jpg" alt="" width="24" height="24">
+                   <span>Afif Yulistian</span> 
+                </a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-chevron-down fa-fw"></i> Tampilkan 107 lagi</a>
+                <hr class="divider">
+                <b class="list-group-item"> LAINNYA DARI YOUTUBE </b>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fab fa-youtube fa-fw"></i> Youtube Premium</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-film fa-fw"></i> Film</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-gamepad fa-fw"></i> Game</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-broadcast-tower fa-fw"></i> Live</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-trophy fa-fw"></i> Olahraga</a>
+                <hr class="divider">
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-cog fa-fw"></i> Setelan</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="far fa-flag fa-fw"></i> Histori laporan</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="far fa-question-circle fa-fw"></i> Bantuan</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-exclamation-circle fa-fw"></i> Kirim masukan</a>
+                <hr class="divider">
+                <p class="list-group-item">&copy; 2021 Google LLC</p>
+            </div>
+        </div>
+        <div class="col-lg-10 pl-0">
+            <div class="container-fluid">
+                    <!-- main -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light space">
+                    <div class="container-fluid">
+                        <form class="navbarr d-flex">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-primary button">Semua</button>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-secondary button">Musik</button>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-secondary button">Live</button>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-secondary button">Kartun</button>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-secondary button">Video mix</button>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-secondary button">Acara memasak</button>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-secondary button">Game platform</button>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-secondary button">Minecraft Bedrock</button>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-secondary button">Roblox</button>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-secondary button">Sepak bola</button>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-secondary button">Baru diupload</button>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-secondary button">Ditonton</button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </nav>
+                <div class="row mt-3 pl-0">
+                    <div class="col-lg-3 px-1">
+                        <div class="card border-light">
+                            <div class="thumbnail">
+                                <img src="image/thumb1.webp" class="card-img-top" alt="Thumbnail 1">
+                                <span class="badge bg-dark time">23.41</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-1 p-0">
+                                        <img class="rounded-circle" src="image/thumb1-a.jpg" alt="" height="28" width="28">
+                                    </div>
+                                    <div class="col-lg-11 pt-0 pl-1">
+                                        <h5 class="card-title h6">Pawai Maut Berujung Rapsodi Dunia Lain (Death Match Kara) - Episode 2..</h5>
+                                        <p class="card-text mb-0">Muse Indonesia <i class="fas fa-check-circle"></i></p>
+                                        <p class="card-text">240 rb x ditonton &middot; 1 hari yang lalu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 px-1">
+                        <div class="card border-light">
+                            <div class="thumbnail">
+                                <img src="image/thumb2.webp" class="card-img-top" alt="Thumbnail 2">
+                                <span class="badge bg-dark time">31.23</span>
+                            </div>
+                            <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-1 p-0">
+                                    <img class="rounded-circle" src="image/thumb2-a.jpg" alt="" height="28" width="28">
+                                </div>
+                                <div class="col-lg-11 pt-0 pl-1">
+                                    <h5 class="card-title h6">JALUR BELAJAR WEB DEVELOPMENT (Front End vs. Back End)</h5>
+                                    <p class="card-text mb-0">Web Programming UNPAS <i class="fas fa-check-circle"></i></p>
+                                    <p class="card-text">625 rb x ditonton &middot; 1 tahun yang lalu</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 px-1">
+                        <div class="card border-light">
+                            <div class="thumbnail">
+                                <img src="image/thumb3.webp" class="card-img-top" alt="Thumbnail 3">
+                                <span class="badge bg-dark time">1.12.45</span>
+                            </div>
+                            <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-1 p-0">
+                                    <img class="rounded-circle" src="image/thumb3-a.jpg" alt="" height="28" width="28">
+                                </div>
+                                <div class="col-lg-11 pt-0 pl-1">
+                                    <h5 class="card-title h6">DENNY CAKNAN FULL ALBUM TERBARU (MENDUNG TANPO UDAN)</h5>
+                                    <p class="card-text mb-0">Inow Official</p>
+                                    <p class="card-text">2,1 jt x ditonton &middot; 1 bulan yang lalu</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 px-1">
+                        <div class="card border-light">
+                            <div class="thumbnail">
+                                <img src="image/thumb4.webp" class="card-img-top" alt="Thumbnail 4">
+                            </div>
+                            <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-1 p-0">
+                                    <img class="rounded-circle" src="image/thumb4-a.jpg" alt="" height="28" width="28">
+                                </div>
+                                <div class="col-lg-11 pt-0 pl-1">
+                                    <h5 class="card-title h6">Regular Season MDL Indonesia - Week 5 Day 2 [Bahasa Indonesia]</h5>
+                                    <p class="card-text mb-0">Mobile Legends : Bang Bang Official <i class="fas fa-check-circle"></i></p>
+                                    <p class="card-text mb-0">10 rb sedang menonton</p>
+                                    <span class="badge bg-danger">LIVE SEKARANG</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3 pl-0">
+                    <div class="col-lg-3 px-1">
+                        <div class="card border-light">
+                            <div class="thumbnail">
+                                <img src="image/thumb5.webp" class="card-img-top" alt="Thumbnail 5">
+                                <span class="badge bg-dark time">11.25</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-1 p-0">
+                                        <img class="rounded-circle" src="image/thumb5-a.jpg" alt="" height="28" width="28">
+                                    </div>
+                                    <div class="col-lg-11 pt-0 pl-1">
+                                        <h5 class="card-title h6">Disaat POCO ga lebih baik dari realme</h5>
+                                        <p class="card-text mb-0">Sobat HAPE <i class="fas fa-check-circle"></i></p>
+                                        <p class="card-text">64 rb x ditonton &middot; 23 jam yang lalu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 px-1">
+                        <div class="card border-light">
+                            <div class="thumbnail">
+                                <img src="image/thumb6.webp" class="card-img-top" alt="Thumbnail 6">
+                                <span class="badge bg-dark time">5.00</span>
+                            </div>
+                            <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-1 p-0">
+                                    <img class="rounded-circle" src="image/thumb6-a.jpg" alt="" height="28" width="28">
+                                </div>
+                                <div class="col-lg-11 pt-0 pl-1">
+                                    <h5 class="card-title h6">KIMI NO TORIKO (SUMMERTIME) | KENTRUNG VERSION | KALIA SISKA...</h5>
+                                    <p class="card-text mb-0">Web Programming UNPAS <i class="fas fa-check-circle"></i></p>
+                                    <p class="card-text">625 rb x ditonton &middot; 1 tahun yang lalu</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 px-1">
+                        <div class="card border-light">
+                            <div class="thumbnail">
+                                <img src="image/thumb7.webp" class="card-img-top" alt="Thumbnail 7">
+                            </div>
+                            <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-1 p-0">
+                                    <img class="rounded-circle" src="image/thumb7-a.jpg" alt="" height="28" width="28">
+                                </div>
+                                <div class="col-lg-11 pt-0 pl-1">
+                                    <h5 class="card-title h6">Musik Jazz Santai dengan Hujan - Musik Jazz Halus 24/7 untuk Bekerja..</h5>
+                                    <p class="card-text mb-0">Coffee Shop Vibes</p>
+                                    <p class="card-text mb-0">513 sedang menonton</p>
+                                    <span class="badge bg-danger">LIVE SEKARANG</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 px-1">
+                        <div class="card border-light">
+                            <div class="thumbnail">
+                                <img src="image/thumb8.webp" class="card-img-top" alt="Thumbnail 8">
+                                <span class="badge bg-dark time">1.13.36</span>
+                            </div>
+                            <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-1 p-0">
+                                    <img class="rounded-circle" src="image/thumb8-a.jpg" alt="" height="28" width="28">
+                                </div>
+                                <div class="col-lg-11 pt-0 pl-1">
+                                    <h5 class="card-title h6">OJO NANGIS DENNY CAKNAN FULL ALBUM (VIDEO)</h5>
+                                    <p class="card-text mb-0">Inow Official</p>
+                                    <p class="card-text mb-0">117 rb x ditonton &middot; 1 minggu yang lalu</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3 pl-0">
+                    <div class="col-lg-3 px-1">
+                        <div class="card border-light">
+                            <div class="thumbnail">
+                                <img src="image/thumb9.webp" class="card-img-top" alt="Thumbnail 9">
+                                <span class="badge bg-dark time">8.32</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-1 p-0">
+                                        <img class="rounded-circle" src="image/thumb9-a.jpg" alt="" height="28" width="28">
+                                    </div>
+                                    <div class="col-lg-11 pt-0 pl-1">
+                                        <h5 class="card-title h6">RAHASIA SUP TULANG LORD ADI BIKIN CHEF JUNA SPEECHLESS!</h5>
+                                        <p class="card-text mb-0">Arnold Poernomo <i class="fas fa-check-circle"></i></p>
+                                        <p class="card-text">16 rb x ditonton &middot; 55 menit yang lalu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 px-1">
+                        <div class="card border-light">
+                            <div class="thumbnail">
+                                <img src="image/thumb10.webp" class="card-img-top" alt="Thumbnail 10">
+                                <span class="badge bg-dark time">48.53</span>
+                            </div>
+                            <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-1 p-0">
+                                    <img class="rounded-circle" src="image/thumb10-a.jpg" alt="" height="28" width="28">
+                                </div>
+                                <div class="col-lg-11 pt-0 pl-1">
+                                    <h5 class="card-title h6">Full Album Guyon Waton Terbaru 2020 - Lagu Terbaru Perlahan</h5>
+                                    <p class="card-text mb-0">Rifqi Nugraha</p>
+                                    <p class="card-text">480 rb x ditonton &middot; 1 tahun yang lalu</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 px-1">
+                        <div class="card border-light">
+                            <div class="thumbnail">
+                                <img src="image/thumb11.webp" class="card-img-top" alt="Thumbnail 11">
+                                <span class="badge bg-dark time">11.43</span>
+                            </div>
+                            <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-1 p-0">
+                                    <img class="rounded-circle" src="image/thumb11-a.jpg" alt="" height="28" width="28">
+                                </div>
+                                <div class="col-lg-11 pt-0 pl-1">
+                                    <h5 class="card-title h6">Cara lancar grammar bahasa Inggris? (Q&A)</h5>
+                                    <p class="card-text mb-0">Zahid Azmi Ibrahim <i class="fas fa-check-circle"></i></p>
+                                    <p class="card-text">22 rb x ditonton &middot; 4 hari yang lalu</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 px-1">
+                        <div class="card border-light">
+                            <div class="thumbnail">
+                                <img src="image/thumb12.webp" class="card-img-top" alt="Thumbnail 12">
+                                <span class="badge bg-dark time">31.32</span>
+                            </div>
+                            <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-1 p-0">
+                                    <img class="rounded-circle" src="image/thumb12-a.jpg" alt="" height="28" width="28">
+                                </div>
+                                <div class="col-lg-11 pt-0 pl-1">
+                                    <h5 class="card-title h6">Unboxing barang barang aneh di Online Shop! Edisi 18.</h5>
+                                    <p class="card-text mb-0">Gadgetin <i class="fas fa-check-circle"></i></p>
+                                    <p class="card-text mb-0">1,3 jt x ditonton &middot; 1 minggu yang lalu</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
